@@ -1,0 +1,36 @@
+@import "../../button/mixins.scss";
+@import "../../../global/media-queries.scss";
+
+.main-navigation-toggle-button {
+  @include button();
+
+  display: none;
+
+  &_visible {
+    display: inline-flex;
+  }
+
+  @media #{$mq-desktop} {
+    display: none;
+  }
+}
+
+.main-navigation-toggle-button__icon {
+  display: inline-flex;
+
+  width: 50px;
+  height: 24px;
+
+  vertical-align: top;
+
+  background-image: url("../img/blocks/main-navigation/main-navigation-toggle-button/open.svg");
+
+  &_close {
+    $size: 23px;
+
+    width: $size;
+    height: $size;
+
+    background-image: url("../img/blocks/main-navigation/main-navigation-toggle-button/close.svg");
+  }
+}

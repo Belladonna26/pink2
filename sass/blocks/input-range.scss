@@ -1,0 +1,96 @@
+.input-range__control {
+  margin-left: 35px;
+  margin-bottom: 39px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-range__control_saturation {
+  @media (max-width: $tablet-width) {
+    margin-left: 107px;
+  }
+}
+
+.input-range__control_contrast {
+  @media (max-width: $tablet-width) {
+    margin-left: 185px;
+  }
+}
+
+.input-range__track_show {
+  display: block;
+  position: relative;
+  left: 20px;
+
+  &::after {
+    position: absolute;
+    top: 34px;
+    right: -39px;
+    width: 320px;
+    height: 1px;
+
+    background-color: $ebony-clay;
+    opacity: 0.1;
+
+    content: "";
+  }
+}
+
+.input-range__track {
+  display: block;
+  position: relative;
+  left: 20px;
+
+  width: 240px;
+  height: 2px;
+  background-color: $ebony-clay;
+
+  &::after {
+    position: absolute;
+    top: 34px;
+    right: -39px;
+    width: 320px;
+    height: 1px;
+
+    background-color: $ebony-clay;
+    opacity: 0.1;
+
+    content: "";
+  }
+
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 202px;
+
+    &::after {
+      top: 34px;
+      right: -39px;
+      width: 275px;
+      height: 1px;
+    }
+  }
+}
+
+.input-range__button {
+  position: absolute;
+  top: -7px;
+  right: 10%;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $white;
+  border: 2px solid $cerise-red;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.input-range {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}

@@ -1,0 +1,23 @@
+
+.sliced-back {
+  position: relative;
+  background-color: $concrete;
+
+  &::before {
+    $before-height: 100px;
+    height: $before-height;
+    width: 100%;
+
+    display: block;
+
+    position: absolute;
+    top: -$before-height;
+
+    background-image: url("../img/grey-background.svg");
+    background-repeat: no-repeat;
+
+    background-position: 50% 0;
+    background-size: 1200px $before-height;
+    content: "";
+  }
+}

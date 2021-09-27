@@ -1,0 +1,143 @@
+@import "global/media-queries.scss";
+
+.promo {
+  padding-top: 21px;
+  background-image: url("../img/mockup/screen.png"), url("../img/mockup/mockup.png");
+  background-position: center bottom 336px, center bottom 279px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    row-gap: 13px;
+
+    height: 545px;
+    padding-top: 74px;
+    padding-left: 20px;
+
+    background-image: url("../img/mockup/screen-tablet.png"), url("../img/mockup/mockup-tablet.png");
+    background-position: right 93px bottom 145px, right bottom;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 644px;
+    padding-top: 98px;
+    padding-left: 130px;
+
+    background-image: url("../img/mockup/screen-desktop.png"), url("../img/mockup/mockup-desktop.png");
+    background-position: bottom 170px right 260px, bottom 0px right 10px;
+  }
+}
+
+.promo__download-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding-top: 26px;
+  padding-bottom: 31px;
+  box-sizing: border-box;
+
+  background-color: $mirage;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.promo__download-button-rounded {
+  @media (min-width: $mobile-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.promo__download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  height: 55px;
+
+  margin-bottom: 29px;
+
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $cerise-red;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $cerise-red-30;
+  }
+}
+
+.promo__slogan {
+  @include font(24px, 28px);
+
+  text-align: center;
+  margin: 0 auto 315px auto;
+
+  color: $white;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font(40px, 48px);
+
+    width: 239px;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include font(50px, 68px);
+
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.promo__buttons {
+  display: flex;
+  align-items: baseline;
+  column-gap: 35px;
+
+  @media #{$mq-mobile-only} {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.promo__available-on {
+  @include font(14px, 24px);
+
+  margin: 0;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 24px);
+  }
+}

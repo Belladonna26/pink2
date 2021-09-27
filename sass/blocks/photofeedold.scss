@@ -1,0 +1,99 @@
+// .photofeed {
+//   &_panorama-of-the-day & {
+//     &__image {
+//       width: calc($mobile-width + $container-mobile-width * 2);
+//       margin: 0 -$container-mobile-width;
+//     }
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     width: 100%;
+//   }
+// }
+
+// .photofeed_width {
+//   @media (min-width: $desktop-width) {
+//     width: 300px;
+//   }
+// }
+
+// .photofeed__image {
+//   display: block;
+// }
+
+// .photofeed__comment,
+// .photofeed__like {
+//   background-color: $concrete;
+// }
+
+// .photofeed__comment {
+//   padding: 25px 10px 25px 17px;
+
+//   @media (min-width: $tablet-width) {
+//     padding: 30px 30px;
+//     box-sizing: border-box;
+//   }
+
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+//     width: 300px;
+//   }
+// }
+
+// .photofeed__comment-header {
+//   height: 10px;
+// }
+
+// .photofeed__subtitle {
+//   margin-top: 0;
+// }
+
+// .photofeed__subtitle_margin {
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+//     margin: 0;
+//   }
+// }
+
+// .photofeed__author,
+// .photofeed__time,
+// .photofeed__text {
+//   color: $ebony-clay;
+// }
+
+// .photofeed__author {
+//   @include font(14px, 24px);
+
+//   font-weight: 700;
+// }
+
+// .photofeed__time {
+//   @include font(12px, 24px);
+
+//   text-transform: uppercase;
+// }
+
+// .photofeed__text {
+//   @include font(14px, 24px);
+
+//   margin: 14px 0 27px 0;
+//   font-weight: 400;
+// }
+
+// .photofeed__like {
+//   display: flex;
+//   align-items: baseline;
+//   column-gap: 18px;
+// }
+
+// .photofeed__like-count {
+//   @include font(12px, 24px);
+
+//   margin: 0;
+
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   color: $cerise-red;
+// }
+
+// .photofeed__comment-footer {
+//   margin-top: 0;
+// }

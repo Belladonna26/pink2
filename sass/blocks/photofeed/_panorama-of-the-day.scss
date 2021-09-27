@@ -1,0 +1,73 @@
+@import "../../global/variables.scss";
+
+.photofeed_panorama-of-the-day .photofeed__image {
+  width: calc(100% + #{$container-mobile-padding} * 2);
+  margin-left: -#{$container-mobile-padding};
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + #{$container-desktop-padding} * 2);
+    margin-left: -#{$container-desktop-padding};
+  }
+}
+
+.photofeed_panorama-of-the-day .photofeed__comment {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 1fr;
+    row-gap: 14px;
+    width: 100%;
+  }
+}
+
+.photofeed_panorama-of-the-day .photofeed__text {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 0;
+  }
+}
+
+.photofeed__image-wrapper {
+  position: relative;
+}
+
+.photofeed_panorama-of-the-day .photofeed__image-wrapper::after {
+  @include font(12px, 24px);
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  width: 140px;
+  height: 36px;
+
+  padding-top: 5px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: $cerise-red;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white;
+
+  content: "Панорама дня";
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
+
+.photofeed_panorama-of-the-day .photofeed__comment-footer {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+
+    margin-top: 0;
+  }
+}

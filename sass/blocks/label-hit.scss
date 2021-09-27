@@ -1,0 +1,37 @@
+.label-hit {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    @include font(14px, 30px);
+
+    position: absolute;
+    top: 8px;
+    left: -27px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+
+    box-sizing: border-box;
+    background-color: $cerise-red;
+    content: "Хит";
+
+    font-weight: 400;
+
+    @media (max-width: $tablet-width) {
+      width: 104px;
+      height: 27px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      top: 3px;
+      width: 87px;
+      height: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 105px;
+      height: 33px;
+    }
+  }
+}

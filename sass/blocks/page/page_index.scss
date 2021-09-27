@@ -1,0 +1,47 @@
+@import "global/media-queries.scss";
+
+.page_index .page-header {
+  @media (max-width: $tablet-width) {
+    height: 465px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    height: 730px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+  }
+}
+
+.page_index .page__advantages {
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page_index .page__testimonials {
+  margin-bottom: 100px;
+}
+
+.page_index .page__offer {
+  margin-bottom: 28px;
+
+  @media #{$mq-mobile-only} {
+    margin-top: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 152px;
+  }
+}
+
+.page_index .page__effect {
+  margin-bottom: 109px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}

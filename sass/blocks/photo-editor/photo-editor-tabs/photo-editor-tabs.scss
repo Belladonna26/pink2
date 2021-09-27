@@ -1,0 +1,112 @@
+@import "../../../global/mixins.scss";
+@import "../../../global/media-queries.scss";
+
+.photo-editor-tabs {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  width: 100%;
+
+  @media #{$mq-tablet} {
+    position: relative;
+  }
+}
+
+.photo-editor-tabs__tab-list {
+  @media #{$mq-mobile-only} {
+    display: flex;
+    gap: 35px;
+    align-self: center;
+    align-items: center;
+
+    margin-bottom: 4px;
+  }
+
+  @media #{$mq-tablet} {
+    position: absolute;
+    z-index: $z-index-layer-1;
+  }
+}
+
+.photo-editor-tabs__crop-tab-button,
+.photo-editor-tabs__saturation-tab-button,
+.photo-editor-tabs__contrast-tab-button {
+  @media #{$mq-tablet} {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.photo-editor-tabs__crop-tab-button {
+  @media #{$mq-tablet} {
+    top: 10px;
+  }
+}
+
+.photo-editor-tabs__saturation-tab-button {
+  @media #{$mq-tablet} {
+    top: 80px;
+  }
+}
+
+.photo-editor-tabs__contrast-tab-button {
+  @media #{$mq-tablet} {
+    top: 160px;
+  }
+}
+
+.photo-editor-tabs__tab-panel {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 70px;
+
+  outline: none;
+  border-bottom: 2px solid $ebony-clay-10;
+
+  /*
+    Для реализации поведения Tabs только на экране мобильного устройства
+   */
+  @media #{$mq-mobile-only} {
+    display: none;
+  }
+
+  @media #{$mq-tablet} {
+    $padding: 18px;
+    $tab-zone-width: 55px;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 $padding 0 $tab-zone-width;
+  }
+
+  @media #{$mq-desktop} {
+    $padding: 30px;
+    $tab-zone-width: 92px;
+
+    padding: 0 $padding 0 $tab-zone-width;
+  }
+
+  &:last-child {
+    @media #{$mq-desktop} {
+      border-bottom: none;
+    }
+  }
+
+  &:focus-visible {
+    @include focus-box-shadow();
+  }
+
+  /*
+    Для реализации поведения Tabs только на экране мобильного устройства
+   */
+  &_visible {
+    @media #{$mq-mobile-only} {
+      display: flex;
+    }
+  }
+}

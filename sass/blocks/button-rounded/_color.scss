@@ -1,0 +1,28 @@
+@import "../../global/variables";
+
+$colors: (
+  "cerise-red": $cerise-red,
+  "ebony-clay-10": $ebony-clay-10,
+  "white": $white
+);
+
+// stylelint-disable-next-line
+@each $name, $color in $colors {
+  .button-rounded_color_#{$name} {
+    color: $color;
+
+    &:hover,
+    &:active {
+      border-color: transparent;
+      background-color: $color;
+    }
+
+    &:hover {
+      color: $white;
+    }
+
+    &:active {
+      color: $white-30;
+    }
+  }
+}

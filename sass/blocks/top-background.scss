@@ -1,0 +1,10 @@
+.top-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 171px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+  }
+}

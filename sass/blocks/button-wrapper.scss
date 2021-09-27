@@ -1,0 +1,9 @@
+@import "button/mixins.scss";
+
+.button-wrapper {
+  @include button();
+}
+
+.button-wrapper img {
+  display: block;
+}

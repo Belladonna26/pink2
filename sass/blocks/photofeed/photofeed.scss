@@ -1,0 +1,107 @@
+@import "../../global/variables.scss";
+@import "../../global/media-queries.scss";
+@import "_panorama-of-the-day.scss";
+
+.photofeed {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.photofeed__image-wrapper {
+  position: relative;
+
+  display: block;
+
+  height: 0;
+  padding-top: calc(100% / (280 / 180));
+  background-color: $ebony-clay-10;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-top: 0;
+  }
+}
+
+.photofeed__image {
+  position: absolute;
+  top: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.photofeed__comment {
+  margin: 0;
+  padding: 25px 10px 25px 17px;
+
+  background-color: $concrete;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    min-height: 155px;
+    padding: 30px;
+  }
+}
+
+.photofeed__comment-header {
+  height: 10px;
+  margin-bottom: 14px;
+}
+
+.photofeed__author,
+.photofeed__time,
+.photofeed__text {
+  color: $ebony-clay;
+}
+
+.photofeed__author {
+  @include font(14px, 24px);
+
+  font-weight: 700;
+}
+
+.photofeed__time {
+  @include font(12px, 24px);
+
+  text-transform: uppercase;
+}
+
+.photofeed__text {
+  @include font(14px, 24px);
+
+  margin: 0 0 auto 0;
+  font-weight: 400;
+}
+
+.photofeed__comment-footer {
+  display: flex;
+  align-items: baseline;
+  column-gap: 18px;
+}
+
+.photofeed__like-count {
+  @include font(12px, 24px);
+
+  margin: 0;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $cerise-red;
+}

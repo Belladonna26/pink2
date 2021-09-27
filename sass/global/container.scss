@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.container {
+  padding: 0 $container-mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $container-tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $container-desktop-padding;
+  }
+}
+
+.container_no-padding {
+  @media (min-width: $mobile-width) and (max-width: 659px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

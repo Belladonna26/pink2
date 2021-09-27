@@ -1,0 +1,29 @@
+.sub {
+  padding-bottom: 49px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 98px;
+  }
+}
+
+.sub__tariffs-wrapper {
+  width: 100%;
+  margin-bottom: 45px;
+  overflow-x: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.sub__controls {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

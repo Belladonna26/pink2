@@ -1,0 +1,40 @@
+.filter__photo {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $concrete;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 275px;
+    column-gap: 28px;
+  }
+}
+
+.filter__image {
+  margin-bottom: 42px;
+}
+
+.filter__controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  margin-bottom: 72px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.filter__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}

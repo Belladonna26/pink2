@@ -1,0 +1,81 @@
+@import "../../global/variables.scss";
+@import "../../global/media-queries.scss";
+@import "photo-editor-input-slider/photo-editor-input-slider.scss";
+@import "photo-editor-tab-button/photo-editor-tab-button.scss";
+@import "photo-editor-tabs/photo-editor-tabs.scss";
+
+.photo-editor {
+  padding: 20px 20px 40px;
+
+  background-color: $concrete;
+
+  @media #{$mq-tablet} {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 47px;
+
+    padding: 57px 20px;
+  }
+
+  @media #{$mq-desktop} {
+    gap: 90px;
+
+    padding: 57px 60px 57px 80px;
+  }
+}
+
+.photo-editor__image-wrapper {
+  $image-width: 280;
+  $image-height: 374;
+
+  position: relative;
+
+  display: block;
+
+  padding-top: calc(100% / (#{$image-width} / #{$image-height}));
+  background-color: $mirage;
+
+  @media #{$mq-mobile-only} {
+    margin-bottom: 42px;
+  }
+
+  @media #{$mq-tablet} {
+    $image-width: 300;
+    $image-height: 400;
+
+    padding-top: calc(100% / (#{$image-width} / #{$image-height}));
+  }
+}
+
+.photo-editor__image {
+  position: absolute;
+  top: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.photo-editor__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-editor__form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-top: 38px;
+
+  @media #{$mq-tablet} {
+    gap: 24px;
+    margin-top: auto;
+  }
+
+  @media #{$mq-desktop} {
+    flex-direction: row;
+    gap: 44px;
+  }
+}

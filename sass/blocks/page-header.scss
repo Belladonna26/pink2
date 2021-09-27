@@ -1,0 +1,34 @@
+@import "../global/media-queries.scss";
+
+.page-header {
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    height: 240px;
+    background-image: url("../img/back/back-mobile.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back/back-mobile@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back/back-tablet.png");
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back/back-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back/back-desktop.png");
+    background-position: 0 0;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back/back-desktop@2x.png");
+    }
+  }
+}

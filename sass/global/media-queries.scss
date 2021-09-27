@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+$mq-mobile-only: (max-width: $tablet-width - 1px);
+$mq-tablet: (min-width: $tablet-width);
+$mq-tablet-only: (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px});
+$mq-desktop: (min-width: $desktop-width);
+$mq-before-desktop: (max-width: #{$desktop-width - 1px});

@@ -1,0 +1,17 @@
+@import "../../global/variables.scss";
+
+@mixin main-navigation-item() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 63px;
+
+    background-color: $ebony-clay;
+    box-shadow: 0 1px 0 $black, inset 0 1px 0 $white-15;
+
+    &:first-child {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+}

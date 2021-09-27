@@ -1,0 +1,43 @@
+@import "mixins.scss";
+
+.button {
+  @include font(18px, 30px);
+  @include button();
+
+  min-width: 276px;
+  min-height: 59px;
+
+  margin-bottom: 46px;
+
+  background-color: $jungle-green;
+  border: 2px solid $jungle-green;
+  border-radius: 1px;
+  box-sizing: border-box;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+
+  &:hover {
+    background-color: $eucalyptus;
+    border: 2px solid $eucalyptus;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
+  &:disabled {
+    background-color: $mercury;
+    border: 2px solid $mercury;
+  }
+
+  &:focus-visible {
+    border: 2px solid $eucalyptus;
+    background-color: $eucalyptus;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

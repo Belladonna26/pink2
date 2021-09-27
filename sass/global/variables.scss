@@ -1,0 +1,38 @@
+$white: #ffffff;
+$white-15: rgba(255, 255, 255, 0.15);
+$white-30: rgba(255, 255, 255, 0.3);
+$concrete: #f2f2f2;
+$ebony-clay: #283645;
+$ebony-clay-10: rgba(40, 54, 69, 0.1);
+$ebony-clay-30: rgba(40, 54, 69, 0.3);
+$ebony-clay-60: rgba(40, 54, 69, 0.6);
+$black: #000000;
+$black-30: rgba(0, 0, 0, 0.3);
+$cerise-red: #d22856;
+$cerise-red-30: rgba(210, 40, 86, 0.3);
+$mirage: #1d2631;
+$mercury: #e5e5e5;
+$jungle-green: #2aab6d;
+$eucalyptus: #1c9b5e;
+$cornflower-blue-50: rgba(cornflowerblue, 0.5);
+
+// Viewports
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width: 320px;
+// Viewports end
+
+$container-mobile-padding: 20px;
+$container-tablet-padding: $container-mobile-padding;
+$container-desktop-padding: 130px;
+
+@mixin font($font-size: 14px, $line-height: 14px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Times
+$time-microinteraction: 250ms;
+
+// Z-index Layers
+$z-index-layer-1: 1000;

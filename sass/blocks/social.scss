@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  column-gap: 14px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  border: 3px solid $ebony-clay-10;
+
+  &:hover {
+    border: 3px solid $ebony-clay;
+  }
+
+  &:active {
+    opacity: 0.1;
+    border: 3px solid $ebony-clay;
+  }
+}

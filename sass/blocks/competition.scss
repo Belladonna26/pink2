@@ -1,0 +1,138 @@
+.competition {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.competition__condition {
+  @include font(14px, 30px);
+
+  margin: 0;
+  padding: 54px 0 0 0;
+
+  text-align: center;
+  font-weight: 400;
+  color: $ebony-clay;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 30px);
+
+    padding: 100px 65px 0 65px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+    padding: 100px 92px 0 92px;
+  }
+}
+
+.competition__condition_display {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.competition__user {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 82px 0 0 0;
+    border: none;
+  }
+}
+
+.competition__contact {
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 42px;
+  }
+}
+
+.competition__contact .fieldset__field {
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
+}
+
+.competition__contact .fieldset__field:last-child {
+  margin-bottom: 0;
+}
+
+.competition__contact-label {
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
+}
+
+.competition__achievements .fieldset__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.competition__achievements .fieldset__item:nth-last-child(-n+3) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.competition__travel {
+  @media (max-width: 659px) {
+    padding-top: 110px;
+  }
+}
+
+.competition__travel-title {
+  @media (max-width: $tablet-width) {
+    left: -4px;
+  }
+}
+
+.competition__review {
+  @media screen and (max-width: 659px) {
+    padding-top: 88px;
+  }
+}
+
+.competition__review-title {
+  @media screen and (max-width: $tablet-width) {
+    left: 61px;
+  }
+}
+
+.competition__submit {
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+}
+
+.competition__submit-requirement {
+  @include font(14px, 30px);
+
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $ebony-clay;
+}

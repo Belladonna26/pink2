@@ -1,0 +1,37 @@
+@import "../global/variables.scss";
+@import "../global/media-queries.scss";
+
+.page-main__photo-editor-introduction {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 76px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 52px 0;
+  }
+}
+
+.page-main__introduction {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 60px;
+  padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    margin: 0 auto 85px auto;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+    margin: 0 auto 97px auto;
+  }
+}
+
+.page-main__photo-editor {
+  @media #{$mq-desktop} {
+    padding: 0 $container-desktop-padding;
+  }
+}

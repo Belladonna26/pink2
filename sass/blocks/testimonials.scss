@@ -1,0 +1,102 @@
+.testimonials {
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 121px;
+    box-sizing: border-box;
+
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+.testimonials__item {
+  margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.testimonials__author {
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.testimonials__author-name {
+  @include font(18px, 30px);
+
+  font-weight: 700;
+  font-style: normal;
+
+  color: $black;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font(20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(24px, 30px);
+
+    margin-bottom: 17px;
+  }
+}
+
+.testimonials__author-info {
+  @include font(14px, 30px);
+
+  font-weight: 400;
+
+  color: $ebony-clay;
+
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(18px, 30px);
+
+    margin-bottom: 0;
+  }
+}
+
+.testimonials__text {
+  @include font(14px, 30px);
+
+  margin: 0 0 32px 0;
+  font-weight: 400;
+
+  color: $ebony-clay;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

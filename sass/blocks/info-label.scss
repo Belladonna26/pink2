@@ -1,0 +1,51 @@
+.info-label {
+  @include font(14px, 30px);
+
+  margin-left: 21px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $cerise-red;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+// TRASH
+// .contact-label {
+//   position: relative;
+//   margin-left: 44px;
+
+//   @include font(14px, 30px);
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   color: $cerise-red;
+// }
+
+// @media screen and (min-width:$tablet-width) {
+//   .contact-label {
+//     margin-left: 0;
+//  }
+//  .contact-label_phone-icon::after {
+//   content: url("../img/phone-icon.svg");
+//   position: absolute;
+//   bottom: 67px;
+//   right: 20px;
+
+//   width: 20px;
+//   height: 19px;
+//   z-index: 2;
+// }
+
+// .contact-label_letter-icon::after {
+// content: url("../img/mail-icon.svg");
+// position: absolute;
+// bottom: 77px;
+// right: 20px;
+
+// width: 18px;
+// height: 13px;
+// z-index: 2;
+// }
+// }

@@ -1,0 +1,47 @@
+@import "../../../global/variables.scss";
+@import "../../button/mixins.scss";
+
+.photo-editor-input-slider__track {
+  position: relative;
+
+  height: 2px;
+
+  background-color: $ebony-clay;
+}
+
+.photo-editor-input-slider__button {
+  @include button();
+
+  $size: 14px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  box-sizing: border-box;
+  width: $size;
+  height: $size;
+
+  transform: translate(-50%, -50%);
+
+  border: 2px solid $cerise-red;
+  border-radius: 50%;
+  background-color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    $size: 18px;
+
+    width: $size;
+    height: $size;
+
+    transition: width $time-microinteraction, height $time-microinteraction;
+
+    outline: none;
+  }
+
+  &:active {
+    background-color: $cerise-red;
+  }
+}

@@ -1,0 +1,29 @@
+.slider-buttons {
+  position: relative;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.slider-button {
+  position: absolute;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.slider-button_previous {
+  left: 130px;
+  top: -116px;
+}
+
+.slider-button_next {
+  right: 130px;
+  top: -116px;
+}

@@ -1,0 +1,26 @@
+@import "_color.scss";
+
+/*
+  Неудачное решение, но пока можно пожить и так
+ */
+
+// stylelint-disable-next-line
+@each $name, $color in $colors {
+  .button-rounded_hover-transparent-background.button-rounded_color_#{$name} {
+    $darken-color: rgba($color, 0.3);
+
+    color: $color;
+
+    &:hover {
+      color: $darken-color;
+      border-color: $darken-color;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $white-30;
+      border-color: transparent;
+      background-color: $darken-color;
+    }
+  }
+}

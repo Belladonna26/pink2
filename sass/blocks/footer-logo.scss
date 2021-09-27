@@ -1,0 +1,36 @@
+.logo-without-stars {
+  display: none;
+  fill: $ebony-clay;
+
+  &:hover {
+    fill: $cerise-red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.logo-with-stars {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .logo-with-stars {
+    display: block;
+    fill: #283645;
+  }
+}
+
+.logo-with-stars:hover {
+  fill: #d22856;
+}
+
+.logo-with-stars:active {
+  fill: #283645;
+  opacity: 0.3;
+}

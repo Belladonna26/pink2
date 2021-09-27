@@ -1,0 +1,98 @@
+.fieldset {
+  position: relative;
+  margin: 0;
+  padding: 42px 0;
+  box-sizing: border-box;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 116px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 49px 60px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $mercury;
+    border-radius: 1px;
+  }
+}
+
+.fieldset:first-of-type {
+  @media (max-width: $tablet-width) {
+    padding-top: 82px;
+  }
+}
+
+.fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fieldset__item:not(:last-child) {
+  margin-bottom: 47px;
+}
+
+.fieldset_colored {
+  background-color: $concrete;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.fieldset__field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.fieldset__title {
+  @include font(14px, 18px);
+
+  text-align: center;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $cerise-red;
+
+  @media (max-width: 659px) {
+    position: absolute;
+    top: 42px;
+    left: 41px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.fieldset__title_display {
+  @media (max-width: 659px) {
+    display: none;
+  }
+}

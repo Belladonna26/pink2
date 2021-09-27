@@ -1,0 +1,50 @@
+.slider-controls {
+  display: flex;
+  column-gap: 19px;
+  align-items: baseline;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider-control {
+  width: 6px;
+  height: 6px;
+
+  padding: 0;
+  border-radius: 50%;
+
+  border: none;
+  outline: none;
+
+  background-color: $ebony-clay-30;
+
+  &:hover {
+    background-color: $ebony-clay-60;
+  }
+
+  &:active {
+    background-color: $ebony-clay-10;
+  }
+  cursor: pointer;
+}
+
+.slider-control_current {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  border: 2px solid $ebony-clay;
+  background-color: $white;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+}

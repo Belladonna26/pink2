@@ -1,0 +1,37 @@
+@import "../../global/variables";
+@import "../button/mixins";
+
+.button-rounded {
+  @include font(18px, 18px);
+  @include button();
+
+  $height: 55px;
+
+  box-sizing: border-box;
+  height: $height;
+  padding: 0 38px;
+
+  color: $black;
+  border: 3px solid currentColor;
+  border-radius: $height / 2;
+
+  font-weight: 700;
+
+  &:hover,
+  &:active {
+    border-color: transparent;
+    background-color: $black;
+    transition: color $time-microinteraction, border-color $time-microinteraction / 2, background-color $time-microinteraction;
+  }
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+}
+
+@import "_color.scss";
+@import "_hover-transparent-background.scss";

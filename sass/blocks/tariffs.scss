@@ -1,0 +1,328 @@
+// .tariffs {
+//   border-collapse: collapse;
+//   border-radius: 1px 0 0 0;
+// }
+
+// .tariffs__row {
+//   display: flex;
+// }
+
+// .tariffs__data {
+//   @include font(14px, 30px);
+
+//   width: 276px;
+//   height: 59px;
+//   border: 2px solid $mercury;
+//   box-sizing: border-box;
+
+//   font-weight: 400;
+//   color: $ebony-clay;
+//   background-color: $white;
+
+//   @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     padding: 24px 20px;
+//     box-sizing: border-box;
+
+//     text-transform: uppercase;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     text-transform: none;
+//     box-sizing: border-box;
+//   }
+
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+//     width: 152px;
+//     height: 45px;
+
+//     padding-left: 15px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     @include font(18px, 30px);
+
+//     width: 234px;
+//     height: 59px;
+
+//     padding-left: 22px;
+//   }
+// }
+
+// .tariffs__header {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   width: 276px;
+//   height: 98px;
+
+//   border: none;
+//   box-sizing: border-box;
+
+//   background-color: $ebony-clay;
+//   color: $white;
+
+//   text-transform: uppercase;
+
+//   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+//     padding-top: 19px;
+//   }
+
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+//     width: 152px;
+//     height: 75px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     @include font(18px, 30px);
+
+//     width: 234px;
+//     height: 94px;
+
+//     padding: 15px 60px;
+//     box-sizing: border-box;
+//   }
+// }
+
+// .tariffs__header_border {
+//   border-right: 2px solid $white;
+// }
+
+// .tariffs__header_left-corner {
+//   border-radius: 2px 0 0 0;
+// }
+
+// .tariffs__header_right-corner {
+//   border-radius: 0 2px 0 0;
+// }
+
+// .tariffs__header-price {
+//   @include font(18px, 30px);
+//   font-weight: 300;
+
+//   @media (min-width: $desktop-width) {
+//     @include font(24px, 30px);
+//   }
+// }
+
+// .tariffs__header_background {
+//   @media (max-width: 659px) {
+//     display: none;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     border: none;
+//     background-color: transparent;
+//   }
+// }
+
+// .tariffs__filter_hidden {
+//   @media screen and (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }
+
+// .tariffs__data_ability {
+//   @media (max-width: 659px) {
+//     display: none;
+//   }
+
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+//     justify-content: flex-start;
+//     width: 153px;
+//     height: 45px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     justify-content: flex-start;
+//     width: 234px;
+//     height: 59px;
+//   }
+// }
+
+.tariffs {
+  border-collapse: collapse;
+  border-radius: 1px 0 0 0;
+}
+
+.tariffs__row {
+  display: flex;
+}
+
+.tariffs__data {
+  @include font(14px, 30px);
+
+  width: 276px;
+  height: 59px;
+  border: 1px solid $mercury;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  color: $ebony-clay;
+  background-color: $white;
+
+  @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 20px;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: none;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 152px;
+    height: 45px;
+
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(18px, 30px);
+
+    width: 234px;
+    height: 59px;
+
+    padding-left: 22px;
+  }
+}
+
+.tariffs__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 276px;
+  height: 98px;
+
+  border: none;
+  box-sizing: border-box;
+
+  background-color: $ebony-clay;
+  color: $white;
+
+  text-transform: uppercase;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding-top: 19px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 152px;
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(18px, 30px);
+
+    width: 234px;
+    height: 94px;
+
+    padding: 15px 60px;
+    box-sizing: border-box;
+  }
+}
+
+.tariffs__header_border {
+  border-left: 2px solid $white;
+}
+
+.tariffs__header_left-corner {
+  border-left: 2px solid $ebony-clay;
+  border-radius: 2px 0 0 0;
+
+  @media #{$mq-mobile-only} {
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+  }
+}
+
+.tariffs__header_right-corner {
+  border-radius: 0 2px 0 0;
+}
+
+.tariffs__header-price {
+  @include font(18px, 30px);
+  font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    @include font(24px, 30px);
+  }
+}
+
+.tariffs__header_background {
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.tariffs__filter_hidden {
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tariffs__data_ability {
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 153px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 234px;
+    height: 59px;
+  }
+}
+
+.tariffs__data_border-left {
+  border-left: 2px solid $mercury;
+}
+
+.tariffs__data_border-right {
+  border-right: 2px solid $mercury;
+}
+
+.tariffs__data_border-top {
+  border-top: 2px solid $mercury;
+}
+
+.tariffs__data_border-bottom {
+  border-bottom: 2px solid $mercury;
+}
+
+.tariffs__data_border-top-white {
+  border-top: 2px solid $white;
+}

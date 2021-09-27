@@ -1,0 +1,15 @@
+@import "../../global/media-queries.scss";
+
+.page_photos .page-header {
+  @media (min-width: $mobile-width) and (max-width: 559px) {
+    height: 237px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 395px;
+  }
+}
